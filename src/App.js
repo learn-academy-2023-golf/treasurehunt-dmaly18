@@ -16,7 +16,10 @@ const App = () => {
   ])
 
   const handleGamePlay = (index) => {
-    alert(index)
+  //   alert(index)
+    let updatedBoard = [...board]
+    updatedBoard[index] = "🌴"
+    setBoard(updatedBoard)
   }
 
   return (
@@ -29,6 +32,7 @@ const App = () => {
             value={value} 
             key={index}
             index={index}
+            handleGamePlay={handleGamePlay}
           />
         )
         })}
