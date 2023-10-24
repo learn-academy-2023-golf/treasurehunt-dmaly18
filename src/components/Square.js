@@ -1,7 +1,7 @@
 import React from "react"
 
 const Square = (props) => {
-  const handelClick = () => {
+  const handleClick = () => {
     // alert(props.index)
     props.handleGamePlay(props.index)
   }
