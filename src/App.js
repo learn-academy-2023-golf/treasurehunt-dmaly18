@@ -27,14 +27,14 @@ const App = () => {
       updatedBoard[index] = "🔱"
       setBoard(updatedBoard)
     } else if (bombLocation === index) {
-      updatedBoard[index] = "💥"
+      updatedBoard[index] = "💣"
     } else {
       updatedBoard[index] = "🌴"
      setBoard(updatedBoard)
   }}
 
   const resetGame = () => {
-    window.location.reload();
+    window.location.reload()
   }
 
   return (
@@ -52,7 +52,7 @@ const App = () => {
         )
         })}
       </div>
-      <button onClick={resetGame}>Reset Game</button>
+      <button onClick={resetGame}>Play Again</button>
     </>
   )
 }

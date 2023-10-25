@@ -1,5 +1,6 @@
 h1 {
   text-align: center;
+  color: gold;
 }
 
 .square {
@@ -15,4 +16,12 @@ h1 {
   flex-wrap: wrap;
   width: 620px;
   margin: auto;
+}
+
+body {
+  background-color: maroon;
+}
+
+resetGame {
+  color: blue;
 }
